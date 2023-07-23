@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "sqlite-utils-ml"
+version = "0.0.0"
+description = "An sqlite-utils plugin to perform machine-learning workloads"
+authors = ["Romain Clement <git@romain-clement.net>"]
+license = "Apache License, Version 2.0"
+readme = "README.md"
+packages = [{include = "sqlite_utils_ml"}]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+sqlite-ml = "^0.1.2"
+sqlite-utils = "^3.34"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+flake8 = "^6.0.0"
+mypy = "^1.4.1"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+types-setuptools = "^68.0.0.3"
+
+[tool.poetry.plugins.sqlite_utils]
+ml = "sqlite_utils_ml"
+
+[tool.mypy]
+show_error_codes = "True"
+pretty = "True"
+follow_imports = "silent"
+strict_optional = "True"
+warn_redundant_casts = "True"
+warn_unused_ignores = "True"
+disallow_any_generics = "True"
+check_untyped_defs = "True"
+no_implicit_reexport = "True"
+disallow_untyped_defs = "True"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
