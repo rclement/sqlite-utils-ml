@@ -34,4 +34,11 @@ sqlite-utils memory "select sqml_load_dataset('iris')"
 
 Please refer to [`sqlite-ml`][sqlite-ml] for further instructions.
 
+## License
+
+Licensed under Apache License, Version 2.0
+
+Copyright (c) 2023 - present Romain Clement
+
+
 [sqlite-ml]: https://github.com/rclement/sqlite-ml
