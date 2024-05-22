@@ -18,7 +18,7 @@ flake8 = "==6.1.0"
 mypy = "==1.8.0"
 pytest = "==7.4.3"
 pytest-cov = "==4.1.0"
-types-setuptools = "==68.2.0.2"
+types-setuptools = "==69.5.0.20240522"
 
 [tool.poetry.plugins.sqlite_utils]
 ml = "sqlite_utils_ml"
